@@ -1,0 +1,13 @@
+搭建本地工程步骤
+1.请修改application.yml中的数据源
+2.在本地数据库运行sql目录下的create.sql
+3.运行项目，访问http://localhost:8080/demo/getAll/ 可以看见demo例子
+
+
+工程进度：
+1.SpringBoot 1.5.8.RELEASE
+2.数据库mysql
+3.集成mybatis 1.2.0
+4.集成druid 1.1.0
+5.集成fastjson 1.2.30
+6.集成分页插件pagehelper 1.1.2(未使用)
