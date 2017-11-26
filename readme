@@ -4,7 +4,7 @@
 
 搭建本地工程步骤
 1.请修改application.yml中的数据源
-2.在本地数据库运行sql目录下的create.sql
+2.在本地数据库运行sql目录下的sql文件
 3.运行项目，访问http://localhost:8080/demo/getAll/ 可以看见demo例子
 
 
