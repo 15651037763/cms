@@ -23,6 +23,9 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
+    freemarker:
+        cache: false
+        template-loader-path: classpath:/templates
 mybatis:
   #扫描sql.xml文件
   mapper-locations: classpath:mapping/*.xml
