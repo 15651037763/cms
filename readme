@@ -11,7 +11,8 @@
 工程进度：
 1.SpringBoot 1.5.8.RELEASE
 2.数据库mysql
-3.集成mybatis 1.2.0
+3.集成mybatis 1.3.0
 4.集成druid 1.1.0
-5.集成fastjson 1.2.30
-6.集成分页插件pagehelper 1.1.2(未使用)
+5.集成fastjson 1.2.8
+6.集成freemark 1.5.8.RELEASE
+7.集成分页插件pagehelper 1.2.3(未使用)
