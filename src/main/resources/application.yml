@@ -4,7 +4,7 @@ server:
 spring:
     datasource:
         name: test
-        url: jdbc:mysql://127.0.0.1:3306/cms
+        url: jdbc:mysql://127.0.0.1:3306/cms?characterEncoding=utf8&useSSL=true
         username: root
         password: 199215
         # 使用druid数据源
@@ -27,7 +27,7 @@ spring:
         cache: false
         template-loader-path: classpath:/templates
 mybatis:
-  #扫描sql.xml文件
-  mapper-locations: classpath:mapping/*.xml
-  #自动扫描实体类
-  type-aliases-package: com.pf.org.cms.entity
+    #扫描sql.xml文件
+    mapper-locations: classpath:mapping/*.xml
+    #自动扫描实体类
+    type-aliases-package: com.pf.org.cms.entity
