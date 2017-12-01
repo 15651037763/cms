@@ -1,7 +1,10 @@
 server:
-  port: 8080
+    port: 8080
 
 spring:
+    # 多环境配置
+    profiles:
+        active: dev
     datasource:
         name: test
         url: jdbc:mysql://127.0.0.1:3306/cms?characterEncoding=utf8&useSSL=true
