@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 不分级别同步文件日志输出配置 -->
 <configuration>
     <!-- 日志级别 -->
     <property name="logLevel" value="INFO"></property>
     <!-- 日志地址 -->
     <property name="logPath" value="./logs"></property>
     <!-- 最大保存时间 -->
-    <property name="maxHistory" value="30"/>
+    <property name="maxHistory" value="10"/>
     <!-- 异步缓冲队列的深度,该值会影响性能.默认值为256 -->
     <property name="queueSize" value="512"></property>
 
@@ -29,7 +30,7 @@
     <!-- 文件保存日志的相关配置，同步 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- 保存日志文件的路径 -->
-        <file>${logPath}</file>
+        <file>${logPath}/cms.log</file>
         <!-- 日志格式 -->
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} %-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>
