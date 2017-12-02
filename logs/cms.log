@@ -1,0 +1,42 @@
+2017-12-02 11:57:29 12394 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final 
+2017-12-02 11:57:34 17060 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Starting CmsApplication on panfengdeiMac.local with PID 683 (/Users/panfeng1992/Work/CMS/target/classes started by panfeng1992 in /Users/panfeng1992/Work/CMS) 
+2017-12-02 11:57:34 17060 [restartedMain] INFO  com.pf.org.cms.CmsApplication - The following profiles are active: dev 
+2017-12-02 11:57:34 17282 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@439331f2: startup date [Sat Dec 02 11:57:34 CST 2017]; root of context hierarchy 
+2017-12-02 11:57:37 19898 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+2017-12-02 11:57:37 19930 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2017-12-02 11:57:37 19935 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23 
+2017-12-02 11:57:37 20026 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2017-12-02 11:57:37 20027 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2745 ms 
+2017-12-02 11:57:37 20392 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+2017-12-02 11:57:37 20393 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*] 
+2017-12-02 11:57:37 20395 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2017-12-02 11:57:37 20395 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2017-12-02 11:57:37 20395 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2017-12-02 11:57:37 20395 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] 
+2017-12-02 11:57:37 20395 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*] 
+2017-12-02 11:57:39 21964 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@439331f2: startup date [Sat Dec 02 11:57:34 CST 2017]; root of context hierarchy 
+2017-12-02 11:57:39 22038 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getAll]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testDemo(java.util.Map<java.lang.String, java.lang.Object>) 
+2017-12-02 11:57:39 22039 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2017-12-02 11:57:39 22040 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2017-12-02 11:57:39 22057 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2017-12-02 11:57:39 22058 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2017-12-02 11:57:39 22082 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2017-12-02 11:57:39 22489 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
+2017-12-02 11:57:39 22656 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2017-12-02 11:57:39 22703 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+2017-12-02 11:57:39 22708 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+2017-12-02 11:57:39 22712 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+2017-12-02 11:57:39 22790 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2017-12-02 11:57:39 22811 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2017-12-02 11:57:40 22847 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+2017-12-02 11:57:40 22898 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+2017-12-02 11:57:40 22923 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Started CmsApplication in 22.328 seconds (JVM running for 34.659) 
+2017-12-02 11:58:24 67355 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2017-12-02 11:58:24 67355 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+2017-12-02 11:58:24 67398 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms 
+2017-12-02 11:58:31 74729 [http-nio-8080-exec-4] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
+2017-12-02 11:58:32 74985 [http-nio-8080-exec-4] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
+2017-12-02 11:58:56 99007 [Thread-9] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@439331f2: startup date [Sat Dec 02 11:57:34 CST 2017]; root of context hierarchy 
+2017-12-02 11:58:56 99009 [Thread-9] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown 
+2017-12-02 11:58:56 99009 [Thread-9] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans 
+2017-12-02 11:58:56 99012 [Thread-9] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
