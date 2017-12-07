@@ -43,7 +43,7 @@
         <!-- 循环政策：基于时间创建日志文件 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 日志文件名格式 -->
-            <fileNamePattern>cms-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>${logPath}/cms-%d{yyyy-MM-dd}.log</fileNamePattern>
             <!-- 最大保存时间-->
             <maxHistory>${maxHistory}</maxHistory>
         </rollingPolicy>
