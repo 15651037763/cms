@@ -47,12 +47,12 @@ create table CMS_ROLE_INFO
    primary key (ID)
 );
 
-drop table if exists T_RFDCS_FUNCTION_INFO;
+drop table if exists CMS_FUNCTION_INFO;
 
 /*==============================================================*/
-/* Table: T_RFDCS_FUNCTION_INFO                                 */
+/* Table: CMS_FUNCTION_INFO                                 */
 /*==============================================================*/
-create table T_RFDCS_FUNCTION_INFO
+create table CMS_FUNCTION_INFO
 (
    ID                   int not null auto_increment comment '主键',
    FUN_CODE             varchar(10) not null comment '菜单编码',
