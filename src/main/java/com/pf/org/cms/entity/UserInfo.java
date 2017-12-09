@@ -57,6 +57,7 @@ public class UserInfo extends BaseEntity implements Serializable {
                 ", userName='" + userName + '\'' +
                 ", userPwd='" + userPwd + '\'' +
                 ", remark='" + remark + '\'' +
+                super.toString() +
                 '}';
     }
 }

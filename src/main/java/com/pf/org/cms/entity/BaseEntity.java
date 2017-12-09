@@ -63,4 +63,14 @@ public class BaseEntity {
     public void setSortNo(int sortNo) {
         this.sortNo = sortNo;
     }
+
+    @Override
+    public String toString() {
+        return ", createDate=" + createDate +
+                ", createBy='" + createBy + '\'' +
+                ", modifiedDate=" + modifiedDate +
+                ", modifiedBy='" + modifiedBy + '\'' +
+                ", state=" + state +
+                ", sortNo=" + sortNo;
+    }
 }
