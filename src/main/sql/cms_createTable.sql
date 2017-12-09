@@ -6,7 +6,7 @@ drop table if exists CMS_USER_INFO;
 /*==============================================================*/
 create table CMS_USER_INFO
 (
-   USER_ID              integer(10) not null auto_increment comment '用户ID',
+   ID              integer(10) not null auto_increment comment '用户ID',
    USER_CODE            varchar(20) not null comment '用户编码',
    USER_NAME            varchar(64) not null comment '用户名称',
    USER_PWD             varchar(150) comment '用户密码',
@@ -17,7 +17,7 @@ create table CMS_USER_INFO
    MODIFIED_DATE        datetime comment '修改时间',
    SORTNO               integer(2) default 0 comment '排序',
    STATE                integer(2) comment '数据状态',
-   primary key (USER_ID)
+   primary key (ID)
 );
 
 /*==============================================================*/
