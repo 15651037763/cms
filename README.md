@@ -2,10 +2,11 @@
 该项目为小伙伴学习研究SpringBoot及相关开源资料的产品，发现BUG还望不吝赐教。
 
 搭建本地工程步骤
-1.请修改application.yml中的数据源
-2.在本地数据库运行sql目录下的sql文件
-3.运行项目，访问http://localhost:8080/demo/getAll/ 可以看见demo例子
-4.jdk版本 1.8
+1.jdk版本 1.8
+2.请修改application.yml中的数据源
+3.在本地数据库运行sql目录下的sql文件
+4.运行项目，访问http://localhost:8080/demo/getAll/ 可以看见demo例子
+
 
 
 工程进度：
