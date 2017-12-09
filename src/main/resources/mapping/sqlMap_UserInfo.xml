@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.pf.org.cms.mapper.UserInfoMapper" >
+    <select id="getUserInfos" resultType="com.pf.org.cms.entity.UserInfo">
+        select id,user_code userCode,user_name userName,user_pwd userPwd,remark,
+          create_by createBy,create_date createDate,modified_by modifiedBy,modified_date modifiedDate,sortno,state
+        from cms_user_info where state = #{state}
+        <if test="userCode != null">
+            and user_code = #{userCode}
+        </if>
+        <if test="userName != null">
+            and user_name = #{userName}
+        </if>
+    </select>
+</mapper>
