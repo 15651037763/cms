@@ -3,10 +3,15 @@ package com.pf.org.cms.entity;
 import java.io.Serializable;
 
 public class UserInfo extends BaseEntity implements Serializable {
+    // 主键
     private long id;
+    // 用户编号
     private String userCode;
+    // 用户名称
     private String userName;
+    // 用户密码
     private String userPwd;
+    // 备注
     private String remark;
 
     public long getId() {
