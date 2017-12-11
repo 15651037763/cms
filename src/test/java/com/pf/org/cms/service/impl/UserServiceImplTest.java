@@ -1,6 +1,7 @@
 package com.pf.org.cms.service.impl;
 
 import com.pf.org.cms.entity.UserInfo;
+import com.pf.org.cms.entity.UserRoleInfo;
 import com.pf.org.cms.service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,6 +26,14 @@ public class UserServiceImplTest {
         Map<String, Object> paramMap = new HashMap<>();
         paramMap.put("userCode", "17040406");
         List<UserInfo> res = userService.getUserInfos(paramMap);
+        System.out.println(res.toString());
+    }
+
+    @Test
+    public void getUserRoleInfos() throws Exception {
+        Map<String, Object> paramMap = new HashMap<>();
+//        paramMap.put("userCode", "17040406");
+        List<UserRoleInfo> res = userService.getUserRoleInfos(paramMap);
         System.out.println(res.toString());
     }
 
