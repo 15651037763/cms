@@ -12,4 +12,17 @@
             and user_name = #{userName}
         </if>
     </select>
+
+    <select id="getUserRoleInfos" resultType="com.pf.org.cms.entity.UserRoleInfo">
+        select a.user_code userCode,b.id,b.role_code roleCode,b.role_name roleName,
+        b.create_by createBy,b.create_date createDate,b.modified_by modifiedBy,b.modified_date modifiedDate,b.sortno,b.state
+        from cms_user_info a,cms_role_info b,cms_user_role_r r
+        where a.user_code = r.user_code and b.role_code = r.role_code and b.state = #{state}
+        <if test="userCode != null">
+            and user_code = #{userCode}
+        </if>
+        <if test="roleCode != null">
+            and role_code = #{roleCode}
+        </if>
+    </select>
 </mapper>
