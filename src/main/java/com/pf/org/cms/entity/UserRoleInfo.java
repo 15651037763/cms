@@ -1,8 +1,6 @@
 package com.pf.org.cms.entity;
 
-import java.io.Serializable;
-
-public class UserRoleInfo extends BaseEntity implements Serializable {
+public class UserRoleInfo extends BaseEntity {
     // 主键
     private long id;
     // 用户编号
