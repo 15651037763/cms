@@ -1,5 +1,6 @@
 package com.pf.org.cms.web;
 
+import com.pf.org.cms.common.IConstants;
 import com.pf.org.cms.entity.JsonBean;
 import com.pf.org.cms.utils.ParamUtils;
 import org.apache.commons.collections.MapUtils;
@@ -47,17 +48,21 @@ public class AuthenticationController {
             subject.login(token);
         } catch (UnknownAccountException e) {
             reJson.setMessage("账户不存在");
+            return reJson;
         } catch (DisabledAccountException e) {
-            log.info("ss", e);
             reJson.setMessage("账户存在问题");
+            return reJson;
         } catch (AuthenticationException e) {
-            log.info("ss", e);
             reJson.setMessage("密码错误");
+            return reJson;
         } catch (Exception e) {
+            log.info("登陆异常", e);
             reJson.setMessage("登陆异常");
+            return reJson;
         }
-
+        reJson.setStatus(IConstants.RESULT_INT_SUCCESS);
         reJson.setData("/success");
+        reJson.setMessage("登陆成功");
         return reJson;
     }
 }
