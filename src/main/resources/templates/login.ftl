@@ -17,21 +17,22 @@
 </body>
 
 </html>
+<script type="text/javascript" src="/js/md5.js"></script>
 <script type="text/javascript">
     function submitLogin() {
         var userCode = $.trim($("#userCode").val());
         var userPwd = $.trim($("#userPwd").val());
+        var hexPwd = hex_md5(userPwd);
         $.ajax({
             type: 'POST',
             url: "http://localhost:8080/auth/login_in",
-            data: {"userCode":userCode,"userPwd":userPwd},
+            data: {"userCode":userCode,"userPwd":hexPwd},
             dataType:"json",
             success: function(rep){
                 if(rep.status == 0){
                     alert(rep.message);
-                    alert(rep.data);
                     //window.location.reload();
-                    loadPage(0,baseUrl);
+//                    loadPage(0,baseUrl);
                 }else{
                     alert(rep.message);
                 }
