@@ -3,11 +3,13 @@ package com.pf.org.cms.common;
 import com.pf.org.cms.entity.UserInfo;
 import com.pf.org.cms.entity.UserRoleInfo;
 import com.pf.org.cms.service.UserService;
+import com.pf.org.cms.utils.MD5Util;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
@@ -59,9 +61,9 @@ public class MyRealm extends AuthorizingRealm {
         } else if(userInfos.size() > 1) {
             throw new DisabledAccountException();
         } else {
-            UserInfo user = userInfos.get(1);
+            UserInfo user = userInfos.get(0);
             // 校验密码
-            return new SimpleAuthenticationInfo(authenticationToken.getPrincipal(), user.getUserPwd().toCharArray(), getName());
+            return new SimpleAuthenticationInfo(authenticationToken.getPrincipal(), user.getUserPwd(), ByteSource.Util.bytes("2w@W"),  getName());
         }
     }
 
