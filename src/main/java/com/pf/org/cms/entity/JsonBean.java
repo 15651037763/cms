@@ -20,7 +20,7 @@ public class JsonBean implements Serializable {
     private Object data;
 
     public JsonBean() {
-        status = 0;
+        status = IConstants.RESULT_INT_ERROR;
         message = "";
     }
 
