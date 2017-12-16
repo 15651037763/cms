@@ -16,15 +16,6 @@
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss} %-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>
         </encoder>
-        <!-- 日志级别过滤器 -->
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <!-- 过滤的级别 -->
-            <level>${logLevel}</level>
-            <!-- 匹配时的操作：接收（记录） -->
-            <onMatch>ACCEPT</onMatch>
-            <!-- 不匹配时的操作：拒绝（不记录） -->
-            <onMismatch>DENY</onMismatch>
-        </filter>
     </appender>
 
     <!-- 文件保存日志的相关配置，同步 -->
@@ -49,6 +40,9 @@
         </rollingPolicy>
     </appender>
 
+
+    <!--配置mybatis sql 日志-->
+    <logger name="com.pf.org.cms.mapper" level="DEBUG"/>
     <!-- 基于INFO处理日志：具体控制台或者文件对日志级别的处理还要看所在appender配置的filter，如果没有配置filter，则使用root配置 -->
     <root level="${logLevel}">
         <appender-ref ref="STDOUT" />

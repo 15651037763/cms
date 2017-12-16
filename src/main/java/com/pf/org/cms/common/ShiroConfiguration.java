@@ -71,6 +71,10 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/js/**", "anon");
         filterChainDefinitionMap.put("/auth/**", "anon");
         filterChainDefinitionMap.put("/demo/**", "anon");
+        filterChainDefinitionMap.put("/swagger-*/**", "anon");
+        filterChainDefinitionMap.put("/swagger-ui.html/**", "anon");
+        filterChainDefinitionMap.put("/webjars/**", "anon");
+        filterChainDefinitionMap.put("/v2/**", "anon");
         filterChainDefinitionMap.put("/*", "authc");// 表示需要认证才可以访问
         filterChainDefinitionMap.put("/**", "authc");
         filterChainDefinitionMap.put("/*.*", "authc");

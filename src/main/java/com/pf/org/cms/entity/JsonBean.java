@@ -1,5 +1,7 @@
 package com.pf.org.cms.entity;
 
+import com.pf.org.cms.common.IConstants;
+
 import java.io.Serializable;
 
 /**
