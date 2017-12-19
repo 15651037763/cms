@@ -61,7 +61,14 @@ public class AuthenticationController {
             return reJson;
         }
         reJson.setStatus(IConstants.RESULT_INT_SUCCESS);
-        reJson.setData("/success");
+        String res = subject.getPrincipals().toString();
+        if (subject.hasRole("admin")) {
+            res = res + "----------你拥有admin权限";
+        }
+        if (subject.hasRole("guest")) {
+            res = res + "----------你拥有guest权限";
+        }
+        reJson.setData(res);
         reJson.setMessage("登陆成功");
         return reJson;
     }
