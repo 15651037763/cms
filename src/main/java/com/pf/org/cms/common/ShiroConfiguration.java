@@ -62,7 +62,7 @@ public class ShiroConfiguration {
         filterFactoryBean.setLoginUrl("/auth/login");
         filterFactoryBean.setSuccessUrl("/home");
         // 配置未授权跳转页面
-        filterFactoryBean.setUnauthorizedUrl("/static/403.ftl");
+        filterFactoryBean.setUnauthorizedUrl("/errorPage/403");
         // 配置访问权限
         LinkedHashMap<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
         filterChainDefinitionMap.put("/css/**", "anon"); // 表示可以匿名访问
@@ -70,11 +70,13 @@ public class ShiroConfiguration {
         filterChainDefinitionMap.put("/imgs/**", "anon");
         filterChainDefinitionMap.put("/js/**", "anon");
         filterChainDefinitionMap.put("/auth/**", "anon");
+        filterChainDefinitionMap.put("/errorPage/**", "anon");
         filterChainDefinitionMap.put("/demo/**", "anon");
         filterChainDefinitionMap.put("/swagger-*/**", "anon");
         filterChainDefinitionMap.put("/swagger-ui.html/**", "anon");
         filterChainDefinitionMap.put("/webjars/**", "anon");
         filterChainDefinitionMap.put("/v2/**", "anon");
+        filterChainDefinitionMap.put("/admin/**", "roles[admin]");// 表示admin权限才可以访问
         filterChainDefinitionMap.put("/*", "authc");// 表示需要认证才可以访问
         filterChainDefinitionMap.put("/**", "authc");
         filterChainDefinitionMap.put("/*.*", "authc");
