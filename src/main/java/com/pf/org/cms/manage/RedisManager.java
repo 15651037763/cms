@@ -177,7 +177,7 @@ public interface RedisManager {
      * @param key
      * @param values
      */
-    public void leftListPush(String key, Object... values);
+    public void leftListPush(String key, String... values);
 
     /**
      * 保存list至列表头
@@ -191,7 +191,7 @@ public interface RedisManager {
      * @param key
      * @param values
      */
-    public void rightListPush(String key, Object... values);
+    public void rightListPush(String key, String... values);
 
     /**
      * 保存list至列表尾
