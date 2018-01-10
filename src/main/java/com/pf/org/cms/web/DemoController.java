@@ -1,6 +1,7 @@
 package com.pf.org.cms.web;
 
 import com.pf.org.cms.entity.Demo;
+import com.pf.org.cms.manage.RedisManager;
 import com.pf.org.cms.service.DemoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 import java.util.Map;
@@ -22,6 +24,9 @@ public class DemoController {
 
     @Autowired
     DemoService demoService;
+
+    @Autowired
+    RedisManager redisManager;
 
     @Value("${spring.profiles.active}")
     private String profileActive;
@@ -38,5 +43,13 @@ public class DemoController {
         log.warn("warn---log-------------" + demos.toString());
         log.error("error---log-------------" + demos.toString());
         return ("/testDemo");
+    }
+
+    @RequestMapping(value = "/testRedis")
+    @ResponseBody
+    public String testRedis(String key) {
+        System.out.println("入参key为:"+key);
+        String s = "查询结果为:"+redisManager.getStr(key);
+        return s;
     }
 }
