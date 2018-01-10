@@ -1,7 +1,9 @@
 package com.pf.org.cms.manage.impl;
 
 import com.pf.org.cms.manage.RedisManager;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,8 +15,10 @@ import java.util.concurrent.TimeUnit;
  * @Date: 2017/12/28 19:57
  * @Description:
  */
+@Service(value = "redisManager")
 public class RedisManagerImpl implements RedisManager {
-    private static final StringRedisTemplate redisTemp = new StringRedisTemplate();
+    @Autowired
+    private StringRedisTemplate redisTemp;
 
     @Override
     public String getStr(String key) {
