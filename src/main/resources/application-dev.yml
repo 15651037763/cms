@@ -1,2 +1,40 @@
 logging:
     config: classpath:conf/logback-dev.xml
+
+spring:
+    datasource:
+        name: test
+        url: jdbc:mysql://127.0.0.1:3306/cms?characterEncoding=utf8&useSSL=true
+        username: root
+        password: 199215
+        # 使用druid数据源
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        filters: stat
+        maxActive: 20
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+    redis:
+        database: 2
+        host: 127.0.0.1
+        port: 6379
+        #password
+        timeout: 5000
+        pool:
+            # 最大空闲连接数
+            max-idle: 8
+            # 最小空闲连接数
+            min-idle: 0
+            # 最大活跃连接数
+            max-active: 8
+            # 获取连接时的最大等待毫秒数(-1阻塞不确定的时间)
+            max-wait: -1
