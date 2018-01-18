@@ -21,6 +21,7 @@ admin--112233登陆为管理员权限，可以访问http://http://localhost:8080
 6.集成freemark 1.5.8.RELEASE
 7.集成swagger
 8.集成shiro，实现基础认证和权限管理
+9.集成redis
 
 待进行：
-1.集成redis
+1.实现简单分表
