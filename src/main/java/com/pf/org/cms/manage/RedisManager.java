@@ -12,6 +12,7 @@ import java.util.Map;
 public interface RedisManager {
     /**
      * 查询字符串
+     *
      * @param key
      * @return
      */
@@ -19,6 +20,7 @@ public interface RedisManager {
 
     /**
      * 查询字符串（截取start-end）
+     *
      * @param key
      * @param start
      * @param end
@@ -28,6 +30,7 @@ public interface RedisManager {
 
     /**
      * 保存字符串
+     *
      * @param key
      * @param value
      */
@@ -35,6 +38,7 @@ public interface RedisManager {
 
     /**
      * 保存字符串（带失效时间，单位秒）
+     *
      * @param key
      * @param value
      * @param timeout
@@ -43,6 +47,7 @@ public interface RedisManager {
 
     /**
      * 覆盖保存字符串（从偏移量offset开始）
+     *
      * @param key
      * @param value
      * @param offset
@@ -51,6 +56,7 @@ public interface RedisManager {
 
     /**
      * 保存字符串(已存在返回false)
+     *
      * @param key
      * @param value
      * @return
@@ -59,18 +65,21 @@ public interface RedisManager {
 
     /**
      * 批量保存字符串
+     *
      * @param params
      */
     public void multiSetStr(Map<String, String> params);
 
     /**
      * 批量保存字符串(已存在返回false)
+     *
      * @param params
      */
     public boolean multiSetStrIfAbsent(Map<String, String> params);
 
     /**
      * 查询失效时间（单位秒）
+     *
      * @param key
      * @return
      */
@@ -78,6 +87,7 @@ public interface RedisManager {
 
     /**
      * 设置失效时间（单位秒）
+     *
      * @param key
      * @param timeout
      * @return
@@ -86,6 +96,7 @@ public interface RedisManager {
 
     /**
      * 检查key是否存在
+     *
      * @param key
      * @return
      */
@@ -93,18 +104,21 @@ public interface RedisManager {
 
     /**
      * 删除键值对
+     *
      * @param key
      */
     public void delete(String key);
 
     /**
      * 批量删除键值对
+     *
      * @param keys
      */
     public void multiDelete(List keys);
 
     /**
      * 重命名key
+     *
      * @param oldKey
      * @param newKey
      * @return
@@ -113,6 +127,7 @@ public interface RedisManager {
 
     /**
      * 检查hashKey是否存在
+     *
      * @param key
      * @param hashKey
      * @return
@@ -121,6 +136,7 @@ public interface RedisManager {
 
     /**
      * 查询hashKey值
+     *
      * @param key
      * @param hashKey
      * @return
@@ -129,6 +145,7 @@ public interface RedisManager {
 
     /**
      * 查询哈希表
+     *
      * @param key
      * @return
      */
@@ -136,6 +153,7 @@ public interface RedisManager {
 
     /**
      * 删除hashKey值
+     *
      * @param key
      * @param hashKeys
      * @return
@@ -144,6 +162,7 @@ public interface RedisManager {
 
     /**
      * 保存hashKey值
+     *
      * @param key
      * @param hashKey
      * @param hashValue
@@ -152,6 +171,7 @@ public interface RedisManager {
 
     /**
      * 保存hashKey值(已存在返回false)
+     *
      * @param key
      * @param hashKey
      * @param hashValue
@@ -160,6 +180,7 @@ public interface RedisManager {
 
     /**
      * 保存哈希表
+     *
      * @param key
      * @param map
      */
@@ -167,6 +188,7 @@ public interface RedisManager {
 
     /**
      * 查询list集合
+     *
      * @param key
      * @return
      */
@@ -174,6 +196,7 @@ public interface RedisManager {
 
     /**
      * 保存list值至列表头
+     *
      * @param key
      * @param values
      */
@@ -181,6 +204,7 @@ public interface RedisManager {
 
     /**
      * 保存list至列表头
+     *
      * @param key
      * @param value
      */
@@ -188,6 +212,7 @@ public interface RedisManager {
 
     /**
      * 保存list值至列表尾
+     *
      * @param key
      * @param values
      */
@@ -195,6 +220,7 @@ public interface RedisManager {
 
     /**
      * 保存list至列表尾
+     *
      * @param key
      * @param value
      */
@@ -202,6 +228,7 @@ public interface RedisManager {
 
     /**
      * 弹出列表头元素
+     *
      * @param key
      * @return
      */
@@ -209,6 +236,7 @@ public interface RedisManager {
 
     /**
      * 弹出列表尾元素
+     *
      * @param key
      * @return
      */
@@ -219,6 +247,7 @@ public interface RedisManager {
      * count> 0：删除等于从头到尾移动count个等于value的元素
      * count <0：删除等于从尾到头移动count个等于value的元素
      * count = 0：删除等于value的所有元素
+     *
      * @param key
      * @param count
      * @param value
