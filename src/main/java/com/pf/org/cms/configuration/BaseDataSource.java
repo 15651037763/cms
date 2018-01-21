@@ -1,4 +1,4 @@
-package com.pf.org.cms.datasource;
+package com.pf.org.cms.configuration;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.mybatis.spring.annotation.MapperScan;

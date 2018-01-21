@@ -11,13 +11,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping(value = "/demo")
+@RequestMapping(value = "/demo", method = RequestMethod.GET)
 @Api(description = "swagger测试接口DemoController",tags = {"DemoController"})
 public class DemoController {
     private static final Logger log = LoggerFactory.getLogger(DemoController.class);
@@ -45,7 +46,7 @@ public class DemoController {
         return ("/testDemo");
     }
 
-    @RequestMapping(value = "/testRedis")
+    @RequestMapping(value = "/testRedis", method = RequestMethod.GET)
     @ResponseBody
     public String testRedis(String key) {
         System.out.println("入参key为:"+key);

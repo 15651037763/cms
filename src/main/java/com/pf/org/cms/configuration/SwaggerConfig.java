@@ -1,4 +1,4 @@
-package com.pf.org.cms.swagger;
+package com.pf.org.cms.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
