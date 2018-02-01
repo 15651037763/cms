@@ -24,4 +24,7 @@ admin--112233登陆为管理员权限，可以访问http://http://localhost:8080
 9.集成redis
 
 待进行：
-1.实现简单分表
+1.写一个用户管理的restful demo
+2.SpringBoot定时任务
+3.SpringBoot邮件服务
+4.实现简单分库分表
