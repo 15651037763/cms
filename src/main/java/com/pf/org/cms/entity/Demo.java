@@ -1,5 +1,8 @@
 package com.pf.org.cms.entity;
 
+import com.pf.org.cms.annotation.*;
+
+@Table(value = "cms_demo")
 public class Demo {
     private Long id;
 
@@ -7,6 +10,7 @@ public class Demo {
 
     private String remark;
 
+    @Id(value = "id")
     public Long getId() {
         return id;
     }
@@ -15,6 +19,7 @@ public class Demo {
         this.id = id;
     }
 
+    @Column(value = "name")
     public String getName() {
         return name;
     }
@@ -23,6 +28,7 @@ public class Demo {
         this.name = name;
     }
 
+    @Column(value = "remark")
     public String getRemark() {
         return remark;
     }
