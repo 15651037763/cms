@@ -1,5 +1,10 @@
 package com.pf.org.cms.entity;
 
+import com.pf.org.cms.annotation.Column;
+import com.pf.org.cms.annotation.Id;
+import com.pf.org.cms.annotation.Table;
+
+@Table(value = "CMS_USER_INFO")
 public class UserInfo extends BaseEntity {
     // 主键
     private long id;
@@ -12,6 +17,7 @@ public class UserInfo extends BaseEntity {
     // 备注
     private String remark;
 
+    @Id(value = "ID")
     public long getId() {
         return id;
     }
@@ -20,6 +26,7 @@ public class UserInfo extends BaseEntity {
         this.id = id;
     }
 
+    @Column(value = "USER_CODE")
     public String getUserCode() {
         return userCode;
     }
@@ -28,6 +35,7 @@ public class UserInfo extends BaseEntity {
         this.userCode = userCode;
     }
 
+    @Column(value = "USER_NAME")
     public String getUserName() {
         return userName;
     }
@@ -36,6 +44,7 @@ public class UserInfo extends BaseEntity {
         this.userName = userName;
     }
 
+    @Column(value = "USER_PWD")
     public String getUserPwd() {
         return userPwd;
     }
@@ -44,6 +53,7 @@ public class UserInfo extends BaseEntity {
         this.userPwd = userPwd;
     }
 
+    @Column(value = "REMARK")
     public String getRemark() {
         return remark;
     }
