@@ -1,5 +1,7 @@
 package com.pf.org.cms.entity;
 
+import com.pf.org.cms.annotation.Column;
+
 import java.util.Date;
 
 public class BaseEntity {
@@ -16,6 +18,7 @@ public class BaseEntity {
     // 排序
     private int sortNo;
 
+    @Column(value = "CREATE_DATE")
     public Date getCreateDate() {
         return createDate;
     }
@@ -24,6 +27,7 @@ public class BaseEntity {
         this.createDate = createDate;
     }
 
+    @Column(value = "CREATE_BY")
     public String getCreateBy() {
         return createBy;
     }
@@ -32,6 +36,7 @@ public class BaseEntity {
         this.createBy = createBy;
     }
 
+    @Column(value = "MODIFIED_DATE")
     public Date getModifiedDate() {
         return modifiedDate;
     }
@@ -40,6 +45,7 @@ public class BaseEntity {
         this.modifiedDate = modifiedDate;
     }
 
+    @Column(value = "MODIFIED_BY")
     public String getModifiedBy() {
         return modifiedBy;
     }
@@ -48,6 +54,7 @@ public class BaseEntity {
         this.modifiedBy = modifiedBy;
     }
 
+    @Column(value = "STATE")
     public int getState() {
         return state;
     }
@@ -56,6 +63,7 @@ public class BaseEntity {
         this.state = state;
     }
 
+    @Column(value = "SORTNO")
     public int getSortNo() {
         return sortNo;
     }
