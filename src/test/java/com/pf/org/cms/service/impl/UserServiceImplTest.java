@@ -50,6 +50,15 @@ public class UserServiceImplTest {
     }
 
     @Test
+    public void getUserInfo() {
+        HashMap m = userService.getUserInfo(1L);
+        System.out.println(m.toString());
+    }
+
+    @Test
+    public void updateUserInfo() {}
+
+    @Test
     public void deleteUserInfo() {
         userService.deleteUserInfo(3L);
     }
