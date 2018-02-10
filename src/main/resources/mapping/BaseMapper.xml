@@ -13,6 +13,10 @@
         )
     </insert>
 
+    <select id="queryForObject" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        SELECT * FROM ${TABLE_NAME} WHERE ${KEY_ID} = #{KEY_VALUE}
+    </select>
+
     <update id="update" parameterType="java.util.HashMap">
 
     </update>
