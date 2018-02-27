@@ -34,7 +34,7 @@ public class DemoServiceImplTest {
             demo.setRemark("testRemark");
             ls.add(demo);
         }
-        demoService.batchAddDemo(ls);
+//        demoService.batchAddDemo(ls);
         System.out.println("总耗时(ms)：" + String.valueOf(System.currentTimeMillis() - t));
     }
 }

@@ -1,137 +1,311 @@
-2017-12-13 22:17:32 12370 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final 
-2017-12-13 22:17:37 17082 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Starting CmsApplication on panfengdeiMac.local with PID 1063 (/Users/panfeng1992/Work/CMS/target/classes started by panfeng1992 in /Users/panfeng1992/Work/CMS) 
-2017-12-13 22:17:37 17082 [restartedMain] INFO  com.pf.org.cms.CmsApplication - The following profiles are active: dev 
-2017-12-13 22:17:37 17241 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@784728fb: startup date [Wed Dec 13 22:17:37 CST 2017]; root of context hierarchy 
-2017-12-13 22:17:39 19012 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.pf.org.cms.common.ShiroConfiguration$$EnhancerBySpringCGLIB$$9ede8700] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
-2017-12-13 22:17:39 19019 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d63d4bed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
-2017-12-13 22:17:39 19847 [restartedMain] INFO  c.p.o.cms.common.ShiroConfiguration - SecurityManager注册完成 
-2017-12-13 22:17:39 19858 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
-2017-12-13 22:17:39 19859 [restartedMain] INFO  c.p.o.cms.common.ShiroConfiguration - ShiroFilterFactoryBean注册完成 
-2017-12-13 22:17:40 20792 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
-2017-12-13 22:17:40 20823 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
-2017-12-13 22:17:40 20824 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23 
-2017-12-13 22:17:41 21001 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
-2017-12-13 22:17:41 21001 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3760 ms 
-2017-12-13 22:17:41 21406 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
-2017-12-13 22:17:41 21407 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*] 
-2017-12-13 22:17:41 21409 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
-2017-12-13 22:17:41 21409 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
-2017-12-13 22:17:41 21410 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
-2017-12-13 22:17:41 21410 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] 
-2017-12-13 22:17:41 21410 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*] 
-2017-12-13 22:17:41 21410 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shiroFilter' to: [/*] 
-2017-12-13 22:17:43 22975 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@784728fb: startup date [Wed Dec 13 22:17:37 CST 2017]; root of context hierarchy 
-2017-12-13 22:17:43 23043 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login]}" onto public java.lang.String com.pf.org.cms.web.AuthenticationController.login() 
-2017-12-13 22:17:43 23044 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login_in],produces=[application/json;charset=UTF-8]}" onto public com.pf.org.cms.entity.JsonBean com.pf.org.cms.web.AuthenticationController.loginIn(javax.servlet.http.HttpServletRequest) 
-2017-12-13 22:17:43 23045 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getAll]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testDemo(java.util.Map<java.lang.String, java.lang.Object>) 
-2017-12-13 22:17:43 23046 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
-2017-12-13 22:17:43 23047 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
-2017-12-13 22:17:43 23083 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
-2017-12-13 22:17:43 23083 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
-2017-12-13 22:17:43 23114 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
-2017-12-13 22:17:43 23644 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
-2017-12-13 22:17:43 23856 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
-2017-12-13 22:17:44 23982 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
-2017-12-13 22:17:44 23983 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
-2017-12-13 22:17:44 23987 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
-2017-12-13 22:17:44 24068 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
-2017-12-13 22:17:44 24089 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
-2017-12-13 22:17:44 24126 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
-2017-12-13 22:17:44 24165 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
-2017-12-13 22:17:44 24191 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Started CmsApplication in 23.471 seconds (JVM running for 35.531) 
-2017-12-13 22:17:55 35635 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
-2017-12-13 22:17:55 35636 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
-2017-12-13 22:17:55 35682 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms 
-2017-12-13 22:17:59 39149 [http-nio-8080-exec-6] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} inited 
-2017-12-13 22:17:59 39446 [http-nio-8080-exec-6] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
-2017-12-13 22:18:33 72961 [http-nio-8080-exec-3] INFO  c.p.o.c.w.AuthenticationController - ss 
-org.apache.shiro.authc.AuthenticationException: Authentication failed for token submission [org.apache.shiro.authc.UsernamePasswordToken - 22, rememberMe=false].  Possible unexpected error? (Typical or expected login exceptions should extend from AuthenticationException).
-	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:214)
-	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
-	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:274)
-	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
-	at com.pf.org.cms.web.AuthenticationController.loginIn(AuthenticationController.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
-	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
-	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
-	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
-	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
-	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
-	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
-	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
-	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
-	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.lang.NullPointerException: null
-	at com.pf.org.cms.common.MyRealm.doGetAuthenticationInfo(MyRealm.java:56)
-	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
-	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:267)
-	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
-	... 75 common frames omitted
-2017-12-13 22:18:58 98600 [http-nio-8080-exec-8] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
-2017-12-13 22:18:59 99767 [http-nio-8080-exec-9] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
-2017-12-13 22:19:17 117105 [http-nio-8080-exec-10] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
-2017-12-13 22:19:25 124896 [http-nio-8080-exec-1] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
-2017-12-13 22:19:41 141772 [http-nio-8080-exec-3] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
-2017-12-13 22:19:48 148631 [http-nio-8080-exec-4] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
+2018-02-27 22:17:05 12134 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final 
+2018-02-27 22:17:09 16803 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Starting CmsApplication on panfengdeiMac.local with PID 1159 (/Users/panfeng1992/Work/CMS/target/classes started by panfeng1992 in /Users/panfeng1992/Work/CMS) 
+2018-02-27 22:17:09 16804 [restartedMain] INFO  com.pf.org.cms.CmsApplication - The following profiles are active: dev 
+2018-02-27 22:17:10 16977 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47036adf: startup date [Tue Feb 27 22:17:10 CST 2018]; root of context hierarchy 
+2018-02-27 22:17:11 18667 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-02-27 22:17:12 19233 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.pf.org.cms.configuration.ShiroConfiguration$$EnhancerBySpringCGLIB$$4b3f1d0f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:12 19240 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ab45aa53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:12 19283 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - myRealm注册完成 
+2018-02-27 22:17:12 19544 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:12 19552 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$de19fb83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:12 19557 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseDataSource' of type [com.pf.org.cms.configuration.BaseDataSource$$EnhancerBySpringCGLIB$$703352c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 19933 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 19938 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$8d394db3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 19968 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 19985 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSourceInitializer' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20709 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20716 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20717 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20718 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20723 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20724 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseMapper' of type [com.sun.proxy.$Proxy68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20725 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseServie' of type [com.pf.org.cms.service.impl.BaseServiceClientImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20726 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [com.pf.org.cms.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:13 20726 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myRealm' of type [com.pf.org.cms.common.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:14 21547 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - securityManager注册完成 
+2018-02-27 22:17:14 21558 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:17:14 21559 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - shiroFilter注册完成 
+2018-02-27 22:17:15 22218 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+2018-02-27 22:17:15 22233 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2018-02-27 22:17:15 22234 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23 
+2018-02-27 22:17:15 22288 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2018-02-27 22:17:15 22289 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5312 ms 
+2018-02-27 22:17:15 22567 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+2018-02-27 22:17:15 22579 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*] 
+2018-02-27 22:17:15 22581 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018-02-27 22:17:15 22581 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018-02-27 22:17:15 22581 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018-02-27 22:17:15 22581 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] 
+2018-02-27 22:17:15 22581 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*] 
+2018-02-27 22:17:15 22581 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shiroFilter' to: [/*] 
+2018-02-27 22:17:21 28502 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/testAuthorization]}" onto public java.lang.String com.pf.org.cms.web.AdminController.testAuthorization() 
+2018-02-27 22:17:21 28504 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[GET]}" onto public java.util.Map com.pf.org.cms.web.AdminController.getUser(long) 
+2018-02-27 22:17:21 28504 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[PUT]}" onto public java.util.Map com.pf.org.cms.web.AdminController.updateUser(long) 
+2018-02-27 22:17:21 28504 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[DELETE]}" onto public java.util.Map com.pf.org.cms.web.AdminController.delUser(long) 
+2018-02-27 22:17:21 28504 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[POST]}" onto public java.util.Map com.pf.org.cms.web.AdminController.addUser(long) 
+2018-02-27 22:17:21 28505 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login_in],produces=[application/json;charset=UTF-8]}" onto public com.pf.org.cms.entity.JsonBean com.pf.org.cms.web.AuthenticationController.loginIn(javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:17:21 28505 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login]}" onto public java.lang.String com.pf.org.cms.web.AuthenticationController.login() 
+2018-02-27 22:17:21 28506 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getAll],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testDemo(java.util.Map<java.lang.String, java.lang.Object>) 
+2018-02-27 22:17:21 28506 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/testRedis],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testRedis(java.lang.String) 
+2018-02-27 22:17:21 28506 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/errorPage/403]}" onto public java.lang.String com.pf.org.cms.web.ErrorPageController.http403() 
+2018-02-27 22:17:21 28506 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/errorPage/404]}" onto public java.lang.String com.pf.org.cms.web.ErrorPageController.http404() 
+2018-02-27 22:17:21 28507 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:17:21 28510 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+2018-02-27 22:17:21 28510 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+2018-02-27 22:17:21 28510 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+2018-02-27 22:17:21 28514 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:17:21 28515 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-02-27 22:17:21 28799 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47036adf: startup date [Tue Feb 27 22:17:10 CST 2018]; root of context hierarchy 
+2018-02-27 22:17:21 28835 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:17:21 28835 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:17:21 28861 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:17:22 29333 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
+2018-02-27 22:17:22 29474 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2018-02-27 22:17:22 29522 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+2018-02-27 22:17:22 29523 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+2018-02-27 22:17:22 29528 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+2018-02-27 22:17:22 29577 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647 
+2018-02-27 22:17:22 29577 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+2018-02-27 22:17:22 29657 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2018-02-27 22:17:22 29662 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+2018-02-27 22:17:23 29956 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2018-02-27 22:17:23 29962 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2018-02-27 22:17:23 30004 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+2018-02-27 22:17:23 30043 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+2018-02-27 22:17:23 30047 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Started CmsApplication in 29.365 seconds (JVM running for 41.809) 
+2018-02-27 22:18:05 72014 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018-02-27 22:18:05 72014 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+2018-02-27 22:18:05 72054 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms 
+2018-02-27 22:18:46 113041 [Thread-71] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47036adf: startup date [Tue Feb 27 22:17:10 CST 2018]; root of context hierarchy 
+2018-02-27 22:18:46 113042 [Thread-71] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647 
+2018-02-27 22:18:46 113060 [Thread-71] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown 
+2018-02-27 22:18:46 113060 [Thread-71] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans 
+2018-02-27 22:19:12 11315 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final 
+2018-02-27 22:19:17 16024 [main] INFO  c.p.o.c.s.impl.UserServiceImplTest - Starting UserServiceImplTest on panfengdeiMac.local with PID 1173 (started by panfeng1992 in /Users/panfeng1992/Work/CMS) 
+2018-02-27 22:19:17 16024 [main] INFO  c.p.o.c.s.impl.UserServiceImplTest - The following profiles are active: dev 
+2018-02-27 22:19:17 16068 [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@23202fce: startup date [Tue Feb 27 22:19:17 CST 2018]; root of context hierarchy 
+2018-02-27 22:19:18 16719 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-02-27 22:19:18 17078 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.pf.org.cms.configuration.ShiroConfiguration$$EnhancerBySpringCGLIB$$cc0f089f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:18 17088 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2c1595e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:18 17156 [main] INFO  c.p.o.c.c.ShiroConfiguration - myRealm注册完成 
+2018-02-27 22:19:18 17320 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:18 17329 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$5ee9e713] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:18 17334 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseDataSource' of type [com.pf.org.cms.configuration.BaseDataSource$$EnhancerBySpringCGLIB$$f1033e50] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17562 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17570 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$e093943] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17584 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17595 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSourceInitializer' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17752 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17761 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17761 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17762 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [com.sun.proxy.$Proxy82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17771 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17772 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseMapper' of type [com.sun.proxy.$Proxy84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17774 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseServie' of type [com.pf.org.cms.service.impl.BaseServiceClientImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17775 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [com.pf.org.cms.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17775 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myRealm' of type [com.pf.org.cms.common.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17938 [main] INFO  c.p.o.c.c.ShiroConfiguration - securityManager注册完成 
+2018-02-27 22:19:19 17946 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:19:19 17950 [main] INFO  c.p.o.c.c.ShiroConfiguration - shiroFilter注册完成 
+2018-02-27 22:19:25 23494 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[POST]}" onto public java.util.Map com.pf.org.cms.web.AdminController.addUser(long) 
+2018-02-27 22:19:25 23495 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/testAuthorization],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.AdminController.testAuthorization() 
+2018-02-27 22:19:25 23495 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[GET]}" onto public java.util.Map com.pf.org.cms.web.AdminController.getUser(long) 
+2018-02-27 22:19:25 23495 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[PUT]}" onto public java.util.Map com.pf.org.cms.web.AdminController.updateUser(long) 
+2018-02-27 22:19:25 23495 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[DELETE]}" onto public java.util.Map com.pf.org.cms.web.AdminController.delUser(long) 
+2018-02-27 22:19:25 23496 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login]}" onto public java.lang.String com.pf.org.cms.web.AuthenticationController.login() 
+2018-02-27 22:19:25 23496 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login_in],produces=[application/json;charset=UTF-8]}" onto public com.pf.org.cms.entity.JsonBean com.pf.org.cms.web.AuthenticationController.loginIn(javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:19:25 23497 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getAll],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testDemo(java.util.Map<java.lang.String, java.lang.Object>) 
+2018-02-27 22:19:25 23497 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/testRedis],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testRedis(java.lang.String) 
+2018-02-27 22:19:25 23498 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/errorPage/403]}" onto public java.lang.String com.pf.org.cms.web.ErrorPageController.http403() 
+2018-02-27 22:19:25 23498 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/errorPage/404]}" onto public java.lang.String com.pf.org.cms.web.ErrorPageController.http404() 
+2018-02-27 22:19:25 23498 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:19:25 23500 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+2018-02-27 22:19:25 23500 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+2018-02-27 22:19:25 23500 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+2018-02-27 22:19:25 23505 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:19:25 23505 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-02-27 22:19:25 24104 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@23202fce: startup date [Tue Feb 27 22:19:17 CST 2018]; root of context hierarchy 
+2018-02-27 22:19:25 24191 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:19:25 24191 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:19:25 24225 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:19:26 24544 [main] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
+2018-02-27 22:19:26 24765 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647 
+2018-02-27 22:19:26 24765 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+2018-02-27 22:19:26 24783 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2018-02-27 22:19:26 24789 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+2018-02-27 22:19:26 24958 [main] INFO  c.p.o.c.s.impl.UserServiceImplTest - Started UserServiceImplTest in 24.422 seconds (JVM running for 25.311) 
+2018-02-27 22:19:26 25115 [main] INFO  c.p.o.c.s.i.BaseServiceClientImpl - Function Insert.Transformed Params:{TABLE_NAME=CMS_USER_INFO, KEY_ID=ID, COLUMNS=[USER_NAME, USER_PWD, USER_CODE, REMARK, STATE, CREATE_DATE, CREATE_BY, MODIFIED_DATE, MODIFIED_BY, SORTNO], VALUES=[测试名字, 111000, 112233, null, 1, Tue Feb 27 22:19:26 CST 2018, mko1, null, null, 99], KEY_VALUE=0} 
+2018-02-27 22:19:27 25577 [main] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,test} inited 
+2018-02-27 22:19:27 25647 [Thread-5] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@23202fce: startup date [Tue Feb 27 22:19:17 CST 2018]; root of context hierarchy 
+2018-02-27 22:19:27 25649 [Thread-5] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647 
+2018-02-27 22:19:27 25655 [Thread-5] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+2018-02-27 22:22:43 10483 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final 
+2018-02-27 22:22:48 15401 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Starting CmsApplication on panfengdeiMac.local with PID 1198 (/Users/panfeng1992/Work/CMS/target/classes started by panfeng1992 in /Users/panfeng1992/Work/CMS) 
+2018-02-27 22:22:48 15401 [restartedMain] INFO  com.pf.org.cms.CmsApplication - The following profiles are active: dev 
+2018-02-27 22:22:48 15426 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43eeb098: startup date [Tue Feb 27 22:22:48 CST 2018]; root of context hierarchy 
+2018-02-27 22:22:48 15988 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-02-27 22:22:49 16209 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.pf.org.cms.configuration.ShiroConfiguration$$EnhancerBySpringCGLIB$$21e00d88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16215 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$81e69acc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16239 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - myRealm注册完成 
+2018-02-27 22:22:49 16323 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16331 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b4baebfc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16336 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseDataSource' of type [com.pf.org.cms.configuration.BaseDataSource$$EnhancerBySpringCGLIB$$46d44339] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16522 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16527 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$63da3e2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16547 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16555 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSourceInitializer' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16653 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16660 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16661 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16662 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16668 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16669 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseMapper' of type [com.sun.proxy.$Proxy68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16671 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseServie' of type [com.pf.org.cms.service.impl.BaseServiceClientImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16671 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [com.pf.org.cms.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16672 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myRealm' of type [com.pf.org.cms.common.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16794 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - securityManager注册完成 
+2018-02-27 22:22:49 16802 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:22:49 16803 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - shiroFilter注册完成 
+2018-02-27 22:22:49 16982 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+2018-02-27 22:22:49 16988 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2018-02-27 22:22:49 16989 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23 
+2018-02-27 22:22:49 17033 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2018-02-27 22:22:49 17033 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1607 ms 
+2018-02-27 22:22:50 17160 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+2018-02-27 22:22:50 17161 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*] 
+2018-02-27 22:22:50 17162 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018-02-27 22:22:50 17163 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018-02-27 22:22:50 17163 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018-02-27 22:22:50 17163 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] 
+2018-02-27 22:22:50 17163 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*] 
+2018-02-27 22:22:50 17163 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shiroFilter' to: [/*] 
+2018-02-27 22:22:55 22546 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[POST]}" onto public java.util.Map com.pf.org.cms.web.AdminController.addUser(long) 
+2018-02-27 22:22:55 22547 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/testAuthorization],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.AdminController.testAuthorization() 
+2018-02-27 22:22:55 22547 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[GET]}" onto public java.util.Map com.pf.org.cms.web.AdminController.getUser(long) 
+2018-02-27 22:22:55 22547 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[PUT]}" onto public java.util.Map com.pf.org.cms.web.AdminController.updateUser(long) 
+2018-02-27 22:22:55 22547 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[DELETE]}" onto public java.util.Map com.pf.org.cms.web.AdminController.delUser(long) 
+2018-02-27 22:22:55 22548 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login_in],produces=[application/json;charset=UTF-8]}" onto public com.pf.org.cms.entity.JsonBean com.pf.org.cms.web.AuthenticationController.loginIn(javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:22:55 22548 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login]}" onto public java.lang.String com.pf.org.cms.web.AuthenticationController.login() 
+2018-02-27 22:22:55 22549 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getAll],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testDemo(java.util.Map<java.lang.String, java.lang.Object>) 
+2018-02-27 22:22:55 22549 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/testRedis],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testRedis(java.lang.String) 
+2018-02-27 22:22:55 22549 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/errorPage/403]}" onto public java.lang.String com.pf.org.cms.web.ErrorPageController.http403() 
+2018-02-27 22:22:55 22549 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/errorPage/404]}" onto public java.lang.String com.pf.org.cms.web.ErrorPageController.http404() 
+2018-02-27 22:22:55 22550 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:22:55 22552 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+2018-02-27 22:22:55 22553 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+2018-02-27 22:22:55 22553 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+2018-02-27 22:22:55 22557 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:22:55 22558 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-02-27 22:22:55 22755 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43eeb098: startup date [Tue Feb 27 22:22:48 CST 2018]; root of context hierarchy 
+2018-02-27 22:22:55 22797 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:22:55 22797 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:22:55 22825 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:22:55 23048 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
+2018-02-27 22:22:55 23133 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2018-02-27 22:22:56 23183 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+2018-02-27 22:22:56 23184 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+2018-02-27 22:22:56 23189 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+2018-02-27 22:22:56 23192 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647 
+2018-02-27 22:22:56 23192 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+2018-02-27 22:22:56 23201 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2018-02-27 22:22:56 23207 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+2018-02-27 22:22:56 23362 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2018-02-27 22:22:56 23368 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2018-02-27 22:22:56 23389 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+2018-02-27 22:22:56 23399 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+2018-02-27 22:22:56 23404 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Started CmsApplication in 23.26 seconds (JVM running for 33.753) 
+2018-02-27 22:22:56 23831 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018-02-27 22:22:56 23831 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+2018-02-27 22:22:56 23850 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms 
+2018-02-27 22:23:58 85944 [http-nio-8080-exec-9] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,test} inited 
+2018-02-27 22:23:58 86050 [http-nio-8080-exec-9] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
+2018-02-27 22:24:44 131432 [http-nio-8080-exec-8] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
+2018-02-27 22:24:45 132521 [http-nio-8080-exec-1] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
+2018-02-27 22:27:36 304018 [http-nio-8080-exec-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml] 
+2018-02-27 22:27:36 304118 [http-nio-8080-exec-1] INFO  o.s.j.support.SQLErrorCodesFactory - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana] 
+2018-02-27 22:38:02 929464 [Thread-57] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43eeb098: startup date [Tue Feb 27 22:22:48 CST 2018]; root of context hierarchy 
+2018-02-27 22:38:02 929466 [Thread-57] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647 
+2018-02-27 22:38:02 929468 [Thread-57] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown 
+2018-02-27 22:38:02 929468 [Thread-57] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans 
+2018-02-27 22:38:02 929471 [Thread-57] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1} closed 
+2018-02-27 22:38:23 10462 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final 
+2018-02-27 22:38:28 15385 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Starting CmsApplication on panfengdeiMac.local with PID 1235 (/Users/panfeng1992/Work/CMS/target/classes started by panfeng1992 in /Users/panfeng1992/Work/CMS) 
+2018-02-27 22:38:28 15386 [restartedMain] INFO  com.pf.org.cms.CmsApplication - The following profiles are active: dev 
+2018-02-27 22:38:28 15408 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172ef1f: startup date [Tue Feb 27 22:38:28 CST 2018]; root of context hierarchy 
+2018-02-27 22:38:29 15960 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode! 
+2018-02-27 22:38:29 16186 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'shiroConfiguration' of type [com.pf.org.cms.configuration.ShiroConfiguration$$EnhancerBySpringCGLIB$$36a37ca3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:29 16193 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96aa09e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:29 16218 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - myRealm注册完成 
+2018-02-27 22:38:29 16299 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:29 16307 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$c97e5b17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:29 16312 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseDataSource' of type [com.pf.org.cms.configuration.BaseDataSource$$EnhancerBySpringCGLIB$$5b97b254] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:29 16500 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:29 16505 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$789dad47] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:29 16525 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:29 16533 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dataSourceInitializer' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16653 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16659 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16660 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16661 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userInfoMapper' of type [com.sun.proxy.$Proxy66] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16666 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16666 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseMapper' of type [com.sun.proxy.$Proxy68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16667 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'baseServie' of type [com.pf.org.cms.service.impl.BaseServiceClientImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16668 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'userService' of type [com.pf.org.cms.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16668 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'myRealm' of type [com.pf.org.cms.common.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16844 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - securityManager注册完成 
+2018-02-27 22:38:30 16851 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+2018-02-27 22:38:30 16852 [restartedMain] INFO  c.p.o.c.c.ShiroConfiguration - shiroFilter注册完成 
+2018-02-27 22:38:30 17026 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http) 
+2018-02-27 22:38:30 17032 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+2018-02-27 22:38:30 17033 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23 
+2018-02-27 22:38:30 17076 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2018-02-27 22:38:30 17077 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1669 ms 
+2018-02-27 22:38:30 17209 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/] 
+2018-02-27 22:38:30 17210 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*] 
+2018-02-27 22:38:30 17212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*] 
+2018-02-27 22:38:30 17212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*] 
+2018-02-27 22:38:30 17212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*] 
+2018-02-27 22:38:30 17212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*] 
+2018-02-27 22:38:30 17212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*] 
+2018-02-27 22:38:30 17212 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'shiroFilter' to: [/*] 
+2018-02-27 22:38:36 22694 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[POST]}" onto public java.util.Map com.pf.org.cms.web.AdminController.addUser(long) 
+2018-02-27 22:38:36 22695 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/testAuthorization],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.AdminController.testAuthorization() 
+2018-02-27 22:38:36 22695 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[GET]}" onto public java.util.Map com.pf.org.cms.web.AdminController.getUser(long) 
+2018-02-27 22:38:36 22695 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[PUT]}" onto public java.util.Map com.pf.org.cms.web.AdminController.updateUser(long) 
+2018-02-27 22:38:36 22695 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/admin/user],methods=[DELETE]}" onto public java.util.Map com.pf.org.cms.web.AdminController.delUser(long) 
+2018-02-27 22:38:36 22696 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login_in],produces=[application/json;charset=UTF-8]}" onto public com.pf.org.cms.entity.JsonBean com.pf.org.cms.web.AuthenticationController.loginIn(javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:38:36 22696 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/auth/login]}" onto public java.lang.String com.pf.org.cms.web.AuthenticationController.login() 
+2018-02-27 22:38:36 22697 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/getAll],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testDemo(java.util.Map<java.lang.String, java.lang.Object>) 
+2018-02-27 22:38:36 22697 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/demo/testRedis],methods=[GET]}" onto public java.lang.String com.pf.org.cms.web.DemoController.testRedis(java.lang.String) 
+2018-02-27 22:38:36 22698 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/errorPage/403]}" onto public java.lang.String com.pf.org.cms.web.ErrorPageController.http403() 
+2018-02-27 22:38:36 22698 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/errorPage/404]}" onto public java.lang.String com.pf.org.cms.web.ErrorPageController.http404() 
+2018-02-27 22:38:36 22698 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:38:36 22701 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration() 
+2018-02-27 22:38:36 22701 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration() 
+2018-02-27 22:38:36 22702 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources() 
+2018-02-27 22:38:36 22706 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest) 
+2018-02-27 22:38:36 22706 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) 
+2018-02-27 22:38:36 22920 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@172ef1f: startup date [Tue Feb 27 22:38:28 CST 2018]; root of context hierarchy 
+2018-02-27 22:38:36 22957 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:38:36 22957 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:38:36 22986 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler] 
+2018-02-27 22:38:36 23175 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration 
+2018-02-27 22:38:36 23254 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729 
+2018-02-27 22:38:36 23301 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup 
+2018-02-27 22:38:36 23301 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure 
+2018-02-27 22:38:36 23306 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource] 
+2018-02-27 22:38:36 23308 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647 
+2018-02-27 22:38:36 23308 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+2018-02-27 22:38:36 23317 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+2018-02-27 22:38:36 23322 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+2018-02-27 22:38:36 23450 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"] 
+2018-02-27 22:38:36 23456 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"] 
+2018-02-27 22:38:36 23476 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read 
+2018-02-27 22:38:36 23486 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http) 
+2018-02-27 22:38:36 23491 [restartedMain] INFO  com.pf.org.cms.CmsApplication - Started CmsApplication in 23.354 seconds (JVM running for 33.897) 
+2018-02-27 22:39:10 56888 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet' 
+2018-02-27 22:39:10 56888 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started 
+2018-02-27 22:39:10 56902 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms 
+2018-02-27 22:39:17 63924 [http-nio-8080-exec-4] INFO  c.a.druid.pool.DruidDataSource - {dataSource-1,test} inited 
+2018-02-27 22:39:43 90008 [http-nio-8080-exec-9] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 
+2018-02-27 22:39:44 90968 [http-nio-8080-exec-10] INFO  com.pf.org.cms.web.DemoController - info---log-------------[Demo{id=1, name='test', remark='测试数据'}, Demo{id=2, name='doneDate', remark='测试2017.11.25'}] 

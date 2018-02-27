@@ -19,10 +19,10 @@
         from cms_user_info a,cms_role_info b,cms_user_role_r r
         where a.user_code = r.user_code and b.role_code = r.role_code and b.state = #{state}
         <if test="userCode != null">
-            and user_code = #{userCode}
+            and a.user_code = #{userCode}
         </if>
         <if test="roleCode != null">
-            and role_code = #{roleCode}
+            and b.role_code = #{roleCode}
         </if>
     </select>
 </mapper>

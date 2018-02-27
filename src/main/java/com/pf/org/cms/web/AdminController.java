@@ -23,7 +23,8 @@ public class AdminController {
     UserService userService;
 
     @ResponseBody
-    @RequestMapping(value = "/testAuthorization")
+    @RequestMapping(method = RequestMethod.GET, value = "/testAuthorization")
+    @ApiOperation(value = "test", notes = "测试admin访问权限")
     public String testAuthorization() {
         return "你拥有admin访问权限";
     }
