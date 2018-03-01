@@ -37,8 +37,12 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void addUserInfo(UserInfo userInfo) {
-        baseServiceClient.insert(userInfo);
+    public boolean addUserInfo(UserInfo userInfo) {
+        if(1 == baseServiceClient.insert(userInfo)){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -47,15 +51,23 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int updateUserInfo(UserInfo userInfo) {
-        return baseServiceClient.update(userInfo);
+    public boolean updateUserInfo(UserInfo userInfo) {
+        if(1 == baseServiceClient.update(userInfo)){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
-    public void deleteUserInfo(long id) {
+    public boolean deleteUserInfo(long id) {
         UserInfo user = new UserInfo();
         user.setId(id);
-        baseServiceClient.delete(user);
+        if(1 == baseServiceClient.delete(user)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
