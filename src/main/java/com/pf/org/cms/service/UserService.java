@@ -29,7 +29,7 @@ public interface UserService {
      *
      * @param userInfo
      */
-    public void addUserInfo(UserInfo userInfo);
+    public boolean addUserInfo(UserInfo userInfo);
 
     /**
      * 获取用户信息
@@ -44,12 +44,12 @@ public interface UserService {
      *
      * @param userInfo
      */
-    public int updateUserInfo(UserInfo userInfo);
+    public boolean updateUserInfo(UserInfo userInfo);
 
     /**
      * 删除用户信息
      *
      * @param id
      */
-    public void deleteUserInfo(long id);
+    public boolean deleteUserInfo(long id);
 }
