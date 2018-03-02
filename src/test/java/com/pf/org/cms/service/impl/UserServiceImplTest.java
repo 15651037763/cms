@@ -1,5 +1,6 @@
 package com.pf.org.cms.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import com.pf.org.cms.entity.UserInfo;
 import com.pf.org.cms.entity.UserRoleInfo;
 import com.pf.org.cms.service.UserService;
@@ -46,6 +47,7 @@ public class UserServiceImplTest {
         u1.setCreateDate(new Date());
         u1.setSortNo(99);
         u1.setState(1);
+        System.out.println(JSONObject.toJSONString(u1));
         userService.addUserInfo(u1);
     }
 
@@ -56,11 +58,20 @@ public class UserServiceImplTest {
     }
 
     @Test
-    public void updateUserInfo() {}
+    public void updateUserInfo() {
+        UserInfo u1 = new UserInfo();
+        u1.setId(11L);
+        u1.setUserName("测试update名字");
+        u1.setModifiedBy("updater");
+        u1.setModifiedDate(new Date());
+        boolean r = userService.updateUserInfo(u1);
+        System.out.println(r);
+    }
 
     @Test
     public void deleteUserInfo() {
-        userService.deleteUserInfo(3L);
+        boolean r = userService.deleteUserInfo(10L);
+        System.out.println(r);
     }
 
 }
