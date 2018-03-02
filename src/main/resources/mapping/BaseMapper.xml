@@ -18,7 +18,11 @@
     </select>
 
     <update id="update" parameterType="java.util.HashMap">
-
+        UPDATE ${TABLE_NAME} SET
+        <foreach collection="DATA" item="item" index="index" separator=",">
+            ${item.COLUMN} = #{item.COL_VALUE}
+        </foreach>
+        WHERE ${KEY_ID} = #{KEY_VALUE}
     </update>
 
     <delete id="delete" parameterType="java.util.HashMap">
