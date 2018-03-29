@@ -9,22 +9,17 @@
 5.测试权限：访问demo除外的地址会被拦截。
 admin--112233登陆为管理员权限，可以访问http://http://localhost:8080/admin/testAuthorization
 17040406--112233登陆为guest权限，无权访问http://http://localhost:8080/admin/testAuthorization
+6.swagger-ui页面：http://localhost:8080/swagger-ui.html
 
-
-
-工程进度：
-1.SpringBoot 1.5.8.RELEASE
-2.数据库mysql
-3.集成mybatis 1.3.0
-4.集成druid 1.1.0
-5.集成fastjson 1.2.8
-6.集成freemark 1.5.8.RELEASE
-7.集成swagger
-8.集成shiro，实现基础认证和权限管理
-9.集成redis
+已完成：
+1.SpringBoot 1.5.8.RELEASE，数据库mysql，连接池druid 1.1.0，fastjson 1.2.8，分页pagehelper1.2.3
+2.集成mybatis 1.3.0，封装mybatis实现基础增删改查
+3.集成freemark 1.5.8.RELEASE，实现一个demo
+4.集成swagger，实现一个用户管理的restful demo
+5.集成shiro，实现基础认证和权限管理例子
+6.集成redis，实现一个查询demo
 
 待进行：
-1.写一个用户管理的restful demo
-2.SpringBoot定时任务
-3.SpringBoot邮件服务
-4.实现简单分库分表
+1.SpringBoot定时任务
+2.SpringBoot邮件服务
+3.实现简单分库分表
